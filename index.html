@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Raleway:ital,wght@1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="MovieTicketWebsite.css" />
+  <title>Movie Ticket Website</title>
+</head>
+
+<body>
+  <!-- code for navbar -->
+  <header>
+    <div id="top">
+      <nav class="navbar navbar-expand-lg relative-top" style="
+            background-color: lightgray;
+            position: relative;
+            top: 0;
+            width: 100%;
+          ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="navimg" alt="portfolio gif"
+              src="ImageForMovieWebsite/Portfolio_.gif" />
+            Shivshankar Mishra</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-secondary rounded-5 shadow-sm" id="pillNav2"
+                role="tablist" style="
+                    --bs-nav-link-color: var(--bs-secondry);
+                    --bs-nav-pills-link-active-color: var(--bs-primary);
+                    --bs-nav-pills-link-active-bg: var(--bs-white);
+                  ">
+                <li class="nav-item" role="presentation">
+                  <a href="index.html" class="nav-link link-active"><button type="button" class="btn btn-secondary" id="abtbtn">Work</button></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="#" class="nav-link link-active"><button type="button" class="btn btn-secondary" id="hmbtn">Home</button></a>
+
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a href="about.html" class="nav-link link-active"><button type="button" class="btn btn-secondary" id="wkbtn">About</button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- navbar code over -->
+  <br />
+  <!-- body code start -->
+  <div class="container">
+    <h1 class="fs-1 text-wrap text-lead text-center">Movie Ticket Website</h1>
+  </div>
+  <br />
+  <div>
+    <img src="ImageForMovieWebsite/ticketimg.jpg" class="img-fluid mx-auto d-block" alt="movie ticket image" />
+  </div>
+  <div class="container">
+    <p id="websummary">
+      A Movie Ticket Online Booking Website is an online platform where users
+      can browse and purchase tickets for movies, concerts, and other
+      entertainment events. The website typically features a search bar and
+      filter options to help users find the desired movie, showtime, and
+      theater location. The platform also allows users to select and reserve
+      seats and make payments securely. Some movie ticket websites also offer
+      rewards programs, discount coupons, and other perks to attract and
+      retain customers. Additionally, the website may feature reviews,
+      ratings, trailers, and other information to help users make informed
+      decisions about their entertainment choices.
+    </p>
+  </div>
+  <br />
+  <div class="container">
+    <h2 class="fs-2 text-wrap text-lead">
+      What problems do I want to solve here?
+    </h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Waiting in line takes time, and no one enjoys it.
+      </li>
+      <li class="list-group-item">
+        There are occasions when the ticket machines need to be serviced.
+      </li>
+      <li class="list-group-item">
+        There isn’t enough staff to assist consumers in a timely manner.
+      </li>
+      <li class="list-group-item">
+        The user is unable to view what movies are available at any given
+        time.
+      </li>
+      <li class="list-group-item">
+        The user is unable to see what movies are available in a certain
+        location.
+      </li>
+      <li class="list-group-item">
+        The user is unable to see which cinemas are open at a given moment.
+      </li>
+      <li class="list-group-item">
+        The user is unable to search movies by selecting the genre.
+      </li>
+    </ul>
+    <br />
+    <h2 class="fs-2 text-wrap text-lead">Design Solution</h2>
+    <p id="desol">
+      The design’s overall goal is to make the moviegoing experience easier by
+      assisting with movie selection and ticket purchasing. A new flows for
+      users so they can also choose movies based on available time, location,
+      genre, etc. It defeats the goal if it appears to be slow, clumsy, or
+      convoluted.
+    </p>
+  </div>
+  <br />
+  <img src="ImageForMovieWebsite/AreYouReady.gif" class="img-fluid mx-auto d-block" alt="Are you Ready gif"
+    id="AYRgif" />
+  <br /><br />
+  <!-- project summary code over -->
+  <div class="container">
+    <h2 class="fs-2 text-wrap text-lead">Design Process</h2>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Gathering requirements:</div>
+          The first step is to gather requirements from the stakeholders, such
+          as the website owner, project manager, and users. The requirements
+          may include the website's objectives, target audience, features, and
+          functionalities.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Conducting research:</div>
+          The next step is to conduct research on similar websites in the
+          market, to understand the latest design trends, and to identify the
+          website's unique selling points.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Creating wireframes:</div>
+          Once the research is done, the designer creates wireframes or
+          low-fidelity sketches of the website's layout, structure, and
+          navigation. This helps to plan the content and functionalities of
+          the website.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Developing the visual design:</div>
+          Based on the wireframes, the designer develops the visual design of
+          the website, which includes the color scheme, typography, images,
+          and other visual elements. The design should be consistent with the
+          brand image and appeal to the target audience.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Building prototypes:</div>
+          After finalizing the visual design, the designer creates interactive
+          prototypes to test the website's usability and functionality. This
+          allows the team to identify and fix any usability issues.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Development and testing:</div>
+          Once the prototypes are approved, the development team builds the
+          website using appropriate tools and technologies. After the website
+          is developed, it undergoes testing to ensure that it works as
+          expected and is bug-free.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Launching and maintenance:</div>
+          After testing, the website is launched, and it becomes available to
+          the public. However, the website's maintenance is an ongoing process
+          that involves updating the website's content, fixing bugs, and
+          adding new features as required.
+        </div>
+      </li>
+    </ol>
+    <img src="ImageForMovieWebsite/Design-thinking-diagram.png" class="img-fluid mx-auto d-block"
+      alt="Design Process img" />
+  </div>
+  <br />
+  <!-- design Process code over -->
+  <!-- Project overview code -->
+  <div class="container">
+    <h2 class="fs-1 text-center text-lead">Project Overview</h2>
+    <br /><br />
+    <div class="row">
+      <div class="col col-md-6 col-sm-12 col-lg-6">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/POPD.png" class="img-fluid mx-auto d-block imgFslide" alt="Project Overview"
+            onclick="change(this)" />
+          <p class="text-center text-lead">Project and Duration</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-sm-12 col-lg-6">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/POPG.png" class="img-fluid mx-auto d-block imgFslide" alt="Problem and Goal"
+            onclick="change(this)" />
+          <p class="text-center text-lead">Problem and Goal</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-sm-12 col-lg-6 offset-md-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/PORR.png" class="img-fluid mx-auto d-block imgFslide"
+            alt="Role and Responsibility" onclick="change(this)" />
+          <p class="text-center text-lead">Role and Responsibility</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <img src="ImageForMovieWebsite/thumbs-up.gif" class="img-fluid mx-auto d-block" alt="Okay gif" id="OKgif" />
+  <br />
+  <!-- Project overview code over -->
+
+  <!-- User Research Code -->
+  <div class="container">
+    <h2 class="fs-2 text-lead">
+      <img src="ImageForMovieWebsite/research.gif" alt="research gif" id="resrch" />
+      User Research
+    </h2>
+    <br />
+    <img src="ImageForMovieWebsite/analysis-research.gif" class="img-fluid mx-auto d-block" alt="Research gif" />
+    <p class="text-center" id="usrsrch">
+      User research is a critical part of UX design, as it helps you to
+      understand your users' needs, motivations, and behaviors.<br />By
+      conducting user research, you can ensure that your Movie Ticket Website
+      is user-friendly, meets the needs of your target audience, and provides
+      a positive user experience.
+    </p>
+    <div class="row">
+      <div class="col col-md-6 col-sm-12 col-lg-6 offset-md-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/UserResearch.png" class="img-fluid mx-auto d-block imgFslide"
+            alt="User Research" onclick="change(this)" />
+          <p class="text-center text-lead">User Research</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <!-- User Research Code over -->
+
+  <!-- User Persona code -->
+  <div class="container">
+    <h2 class="fs-2">User Persona</h2>
+    <ol class="list-group list-group-numbered">
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Movie Enthusiast:</div>
+          This persona is a die-hard movie enthusiast who loves everything about movies, from watching them to
+          discussing them online. They often attend movie festivals and are always on the lookout for the latest
+          releases. They value a user-friendly interface that allows them to easily browse movies and access detailed
+          information about each movie, including reviews and ratings.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Family with Children:</div>
+          This persona is a family with young children who enjoy going to the movies as a family activity. They value a
+          user-friendly interface that allows them to easily find and book tickets for family-friendly movies, as well
+          as access information about the theater, such as the availability of snacks and the proximity of restrooms.
+        </div>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">Casual Moviegoer:</div>
+          This persona is an occasional moviegoer who enjoys going to the movies with friends or family on weekends or
+          holidays. They may not be very tech-savvy and may prefer to book their tickets over the phone or in-person at
+          the theater. They value ease of use, clear instructions, and a friendly user interface when accessing your
+          website.
+        </div>
+      </li>
+      <br /><br />
+      <div class="row">
+        <div class="col col-md-6 col-sm-12 col-lg-6">
+          <div class="image-container">
+            <img src="ImageForMovieWebsite/AmitPersona.png" class="img-fluid mx-auto d-block imgFslide"
+              alt="Amit Persona" onclick="change(this)" />
+            <p class="text-center text-lead">Amit Persona</p>
+          </div>
+        </div>
+        <div class="col col-md-6 col-sm-12 col-lg-6">
+          <div class="image-container">
+            <img src="ImageForMovieWebsite/UserStoryAmit.png" class="img-fluid mx-auto d-block imgFslide"
+              alt="Amit User Story" onclick="change(this)" />
+            <p class="text-center text-lead">Amit User Story</p>
+          </div>
+        </div>
+        <div class="col col-md-6 col-sm-12 col-lg-6">
+          <div class="image-container">
+            <img src="ImageForMovieWebsite/AshaPersona.png" class="img-fluid mx-auto d-block imgFslide"
+              alt="Asha Persona" onclick="change(this)" />
+            <p class="text-center text-lead">Asha Persona</p>
+          </div>
+        </div>
+        <div class="col col-md-6 col-sm-12 col-lg-6">
+          <div class="image-container">
+            <img src="ImageForMovieWebsite/UserStoryAsha.png" class="img-fluid mx-auto d-block imgFslide"
+              alt="Asha User Story" onclick="change(this)" />
+            <p class="text-center text-lead">Asha User Story</p>
+          </div>
+        </div>
+        <div class="col col-md-6 col-sm-12 col-lg-6">
+          <div class="image-container">
+            <img src="ImageForMovieWebsite/TilakPersona.png" class="img-fluid mx-auto d-block imgFslide"
+              alt="Tilak Tyagi Persona" onclick="change(this)" />
+            <p class="text-center text-lead">Tilak Tyagi Persona</p>
+          </div>
+        </div>
+        <div class="col col-md-6 col-sm-12 col-lg-6">
+          <div class="image-container">
+            <img src="ImageForMovieWebsite/UserStoryTilak.png" class="img-fluid mx-auto d-block imgFslide"
+              alt="Tilak Tyagi User Story" onclick="change(this)" />
+            <p class="text-center text-lead">Tilak Tyagi User Story</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center" id="usrper">People who prioritised specific available free time, a convenient location, or
+        a preference in their movie choices can be grouped based on the interviews and surveys I sent out.</p>
+  </div>
+  <br />
+  <!-- User Persona code over -->
+
+  <!-- User Journey and Goal code -->
+  <div class="container">
+    <h2 class="fs-2">User Journey Map</h2>
+    <br />
+    <div class="image-container">
+      <img src="ImageForMovieWebsite/UserJourney.png" class="img-fluid mx-auto d-block imgFslide"
+        alt="User Journey Map" />
+      <p class="text-center text-lead">User Journey Map</p>
+    </div>
+  </div>
+  <br />
+  <!-- User Journey Map code over -->
+
+  <!-- User Painpoint code -->
+  <div class="container">
+    <h2 class="fs-2 text-lead">User Painpoint</h2>
+    <br />
+    <div class="image-container">
+      <img src="ImageForMovieWebsite/PainPoint.png" class="img-fluid mx-auto d-block imgFslide" alt="PainPoint" />
+      <p class="text-center">Pain Point</p>
+    </div>
+  </div>
+  <br />
+  <!-- User Painpoint code over -->
+
+  <!-- Emapathy Map code -->
+  <div class="container">
+    <h2 class="fs-2">Empathy Map</h2>
+    <br /><br />
+    <div class="row">
+      <div class="col col-md-6 col-sm-12 col-lg-6">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/EmapathyMapAmit.png" class="img-fluid mx-auto d-block imgFslide"
+            alt="Emapathy Map Amit" onclick="change(this)" />
+          <p class="text-center text-lead">Emapathy Map Amit</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-sm-12 col-lg-6">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/EmapathyMapAsha.png" class="img-fluid mx-auto d-block imgFslide"
+            alt="Emapathy Map Asha" onclick="change(this)" />
+          <p class="text-center text-lead">Emapathy Map Asha</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-sm-12 col-lg-6 offset-md-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/EmapathyMapTilak.png" class="img-fluid mx-auto d-block imgFslide"
+            alt="Emapathy Map Tilak" onclick="change(this)" />
+          <p class="text-center text-lead">Emapathy Map Tilak Tyagi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <!-- Empathy Map code over -->
+  <br />
+  <img src="ImageForMovieWebsite/LetsFinishThisJob.gif" class="img-fluid mx-auto d-block" alt="Lets Finish The Job"
+    id="letfinishgif" />
+  <br />
+
+  <!-- Sitemap code -->
+  <div class="container">
+    <h2 class="fs-2 text-lead">Sitemap</h2>
+    <p class="text-center" id="sitemap">A sitemap is a visual representation of the pages and structure of a website.
+      It's a hierarchical diagram that shows the relationships between the pages and how they're connected. A sitemap
+      can be useful in many ways, including helping users navigate a website, improving search engine optimization
+      (SEO), and organizing content.
+
+    </p>
+    <br />
+    <div class="image-container">
+      <img src="ImageForMovieWebsite/Sitemap.png" class="img-fluid mx-auto d-block sitemap" alt="Sitemap image" />
+      <p class="text-center">Sitemap For Movie Website</p>
+    </div>
+  </div>
+  <br />
+  <!-- Sitemap code over -->
+
+  <!-- Paper Wireframe code -->
+  <div class="container">
+    <h2 class="fs-2">Paper Wireframe</h2>
+    <br />
+    <p class="text-center" id="pwtext">A paper wireframe is a low-fidelity visual representation of a website or
+      application design created on paper or a whiteboard. It's a quick and easy way to sketch out ideas and layout
+      before moving on to more advanced design tools.</p>
+    <br />
+    <div class="row">
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/pwfhome.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="Paper Wireframe Home Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Home Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/pmoviepage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="PaperWireframe Movie Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Movie Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/pbookpage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="Paper Wireframe Book Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Book Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/psheetpage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="Paper Wireframe Sheet Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Select Sheet Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/psnackspage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="PaperWireframe Snacks Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Snacks Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/ppaymentpage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="Paper Wireframe Payment Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Payment Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/pticketpage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="Paper Wireframe Ticket Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Ticket Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/pprofiepage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="PaperWireframe Profile Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Profile Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/pupcomingpage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="Paper Wireframe Upcoming Movie Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Upcoming Movie Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/pgiftcardpage.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="Paper Wireframe Gift Card Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Gift Card Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/tablethome.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="PaperWireframe TabScreen Home Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe TabScreen Home Page</p>
+        </div>
+      </div>
+      <div class="col col-md-4 col-sm-6 col-lg-3">
+        <div class="image-container">
+          <img src="ImageForMovieWebsite/mobilehome.jpg" class="img-fluid mx-auto d-block imgFslide"
+            alt="PaperWireframe Mobile Screen Home Page" onclick="change(this)" />
+          <p class="text-center text-lead">Paper Wireframe Mobile Screen Home Page</p>
+        </div>
+      </div>
+      <br />
+      <!-- Paper Wireframe code over -->
+      <p class="text-center" id="pwtodw">The transition from paper wireframes to digital wireframes involves taking the
+        low-fidelity design sketches created on paper and translating them into a digital format that can be easily
+        shared and edited.<br />The first step in this process is to scan or photograph the paper wireframes and import
+        them into a digital design tool such as Sketch, Adobe XD, or Figma. Once the paper wireframes are in a digital
+        format, the designer can start refining the design and adding more details and functionality.</p>
+      <br />
+      <img src="ImageForMovieWebsite/ok-alright-then.gif" class="img-fluid mx-auto d-block" alt="Ok Alright gif"
+        id="OkAlright" />
+      <br />
+      <br />
+
+      <!-- Digital Wireframe code -->
+      <div class="container" id="dwframe">
+        <h2 class="fs-2">Digital Wireframe</h2>
+        <br />
+        <p class="text-center" id="dwtext">A digital wireframe is a visual representation of a website or application
+          design that is created using digital design tools such as Sketch, Adobe XD, or Figma. Digital wireframes are
+          created after the initial low-fidelity design sketches on paper and are used to refine the design and add more
+          details and functionality.</p>
+        <br />
+        <div class="row">
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Home Page 1920 – 1.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Home Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Home Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Movie Page 1920 – 3.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Movie Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Movie Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Book Ticket Page 1920 – 4.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Book Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Book Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Select Sheet Page 1920 – 5.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Sheet Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Select Sheet Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Snacks Page 1920 – 12.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Snacks Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Snacks Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Payment Page 1920 – 6.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Payment Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Payment Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Ticket Page 1920 – 7.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Ticket Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Ticket Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/User Profile Page 1920 – 8.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Profile Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Profile Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Upcoming Movies Page 1920 – 10.png"
+                class="img-fluid mx-auto d-block imgFdw" alt="Digital Wireframe Upcoming Movie Page"
+                onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Upcoming Movie Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Gift Tickets Page-2 1920 – 12.png" class="img-fluid mx-auto d-block imgFdw"
+                alt="Digital Wireframe Gift Card Page" onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Gift Card Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/Ticket Page Mobile View Google Pixel 7, 6, 6a, 5a – 2.png"
+                class="img-fluid mx-auto d-block imgFdw" alt="PaperWireframe TabScreen Home Page"
+                onclick="zoom(this)" />
+              <p class="text-center text-lead">Paper Wireframe Mobile Screen Ticket Page</p>
+            </div>
+          </div>
+          <div class="col col-md-4 col-sm-6 col-lg-3">
+            <div class="image-container">
+              <img src="ImageForMovieWebsite/User Profile Page Mobile View Google Pixel 7, 6, 6a, 5a – 2.png"
+                class="img-fluid mx-auto d-block imgFdw" alt="Digital Wireframe Mobile Screen Home Page"
+                onclick="zoom(this)" />
+              <p class="text-center text-lead">Digital Wireframe Mobile Screen Profile Page</p>
+            </div>
+          </div>
+          <br />
+        </div>
+        <img src="ImageForMovieWebsite/interesting.gif" class="img-fluid mx-auto d-block" alt="Interesting gif"
+          id="intrtng" />
+
+        <br />
+        <br>
+        <p class="text-center">Digital wireframes are created with a focus on user experience and functionality,
+          rather than visual design elements such as color, typography, and imagery. The purpose of a digital
+          wireframe is to create a blueprint of the design that outlines the structure, content, and layout of each
+          screen or page in the website or application.</p>
+        <br />
+        <!-- Digital Wireframe code over -->
+        <!--Lo-Fi Prototype code -->
+        <div class="container">
+          <h2 class="fs-1 text-center">Low-Fidelity Prototype</h2>
+          <br />
+          <div class="image-container">
+            <img src="ImageForMovieWebsite/Lo-Fi_Prototype.png" class="img-fluid mx-auto d-block imgFlfp"
+              alt="Low-Fidelity Prototype" />
+            <p class="text-center text-lead">Low-Fidelity Prototype</p>
+            <p class="text-center text-lead">For view fucntionality of prototype click here -> <a
+                href="https://xd.adobe.com/view/132bf65c-f264-43f2-a4ca-4fe2a95ea39d-4678/" target="_blank"
+                id="lofi">Low-Fidelity Prototype</a></p>
+          </div>
+        </div>
+        <br>
+        <img src="ImageForMovieWebsite/wait-what-surprised.gif" class="img-fluid mx-auto d-block"
+          alt="What surprized gif" id="wtwhat" />
+        <!-- Lo-Fi Prototype code over -->
+        <!-- Mockups code -->
+        <div class="container">
+          <h2 class="fs-2">Mockups</h2>
+          <br />
+          <p class="text-center" id="mkuptxt">A mockup is a high-fidelity visual representation of a website or
+            application design that is created using design software such as Sketch, Adobe XD, or Figma.<br />Mockups
+            are
+            created after the digital wireframe stage and are used to refine the design further by adding visual
+            design elements such as typography, color, and imagery.<br />Mockups are an essential part of the design
+            process as they allow designers to visualize and refine the
+            design before moving on to the development stage.<br />Mockups can also be used to test the design with
+            stakeholders and users to get feedback and identify potential issues before the development stage.</p>
+          <br />
+          <div class="container" id="dwframe">
+            <div class="row">
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Home page Mockup 1.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Home Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Home Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Movie Page Mockup 2 – 3.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Movie Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Movie Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Book Page Mockup.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Book Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Book Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Select Sheet Mockup.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Sheet Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Select Sheet Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Snacks Page Mockup.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Snacks Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Snacks Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Payment Page Mockup.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Payment Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Payment Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Ticket Page Mockup.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Ticket Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Ticket Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/User Profile Mockup.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Profile Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Profile Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Upcoming Movie Page Mockup.png"
+                    class="img-fluid mx-auto d-block imgFdw" alt="Upcoming Movie Page Mockup" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Upcoming Movie Page Mockup</p>
+                </div>
+              </div>
+              <div class="col col-md-4 col-sm-6 col-lg-3">
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Gift Ticket Page Mockup – 2.png"
+                    class="img-fluid mx-auto d-block imgFdw" alt="Gift Card Page" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Gift Card Page Mockup</p>
+                </div>
+              </div>
+              <br />
+              <p class="text-center">Mockups can vary in fidelity depending on the needs of the project. Low-fidelity
+                mockups may only show basic layout and design elements, while high-fidelity mockups can include
+                detailed design elements such as typography, color, imagery, and interactive elements such as buttons,
+                links, and forms.<br />Mockups allow designers to experiment with different design elements and
+                variations, such as different
+                color schemes, typography options, and image choices. They also allow designers to create multiple
+                versions of the same screen or page to test different design approaches and get feedback from
+                stakeholders and users.</p>
+            </div>
+            <br>
+            <img src="ImageForMovieWebsite/thanks-awesome.gif" class="img-fluid mx-auto d-block"
+              alt="What surprized gif" id="awesome" />
+            <p class="text-center">Good Job Dude</p>
+            <!-- Mockups code over -->
+            <!-- Hi-Fidelity Prototype code -->
+            <div class="container">
+              <h2 class="fs1 text-center">Hi-Fidelity Prototype</h2>
+              <br />
+              <div class="image-container">
+                <img src="ImageForMovieWebsite/Hi-Fi_Prototype.png" class="img-fluid mx-auto d-block imgFlfp"
+                  alt="Hi-Fidelity Prototype" />
+                <p class="text-center text-lead">Hi-Fidelity Prototype</p>
+                <p class="text-center text-lead">For view fucntionality of prototype click here -> <a
+                    href="https://xd.adobe.com/view/94e4cc0d-9e04-4a5f-b2dd-8e3784c5aea1-c1b7/" target="_blank"
+                    id="hifi">Hi-Fidelity Prototype</a></p>
+              </div>
+            </div>
+            <br>
+            <img src="ImageForMovieWebsite/i-dont-know-what-to-say.gif" class="img-fluid mx-auto d-block"
+              alt="What surprized gif" id="nowrdgif" />
+            <p class="text-center">Mai To Toot Gaya (after seeing wire connection)</p>
+            <br />
+            <br />
+            <!-- Hi-Fidelity Prototype code over -->
+            <!-- embed project code -->
+            <div class="container">
+              <h2 class="fs-1 text-center">Use Movie Ticket Website</h2>
+              <br>
+              <div class="iframe-container">
+                <iframe width="1920" height="1080"
+                  src="https://xd.adobe.com/embed/94e4cc0d-9e04-4a5f-b2dd-8e3784c5aea1-c1b7/" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+              <br>
+              <p class="text-center">The Movie Ticket Website is designed to be responsive and accessible on a wide
+                range of devices, including desktop computers, laptops, tablets, and smartphones. The website is
+                optimized for speed and performance to ensure that users can quickly find the information they need
+                and purchase tickets without delay.</p>
+            </div>
+            <br>
+            <img src="ImageForMovieWebsite/ohh-awesome.gif" class="img-fluid mx-auto d-block" alt="woow gif"
+              id="opgif" />
+            <p class="text-center">Awesome Final Product</p>
+
+            <br><br>
+            <!-- embed project code over -->
+            <!-- Accessiblity, Nextstep, Takeaway code-->
+            <div class="container">
+              <div>
+                <h2 class="fs-2">Accessibility Considerations</h2>
+                <br>
+                <p class="text-center" id="actxt">Accessibility considerations are an important part of any website
+                  design project, as they ensure that the website can be used by people with disabilities and those
+                  who may face barriers to accessing information online.</p>
+                <br>
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/Accessibility.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Accessibility" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Accessibility Considerations</p>
+                </div>
+              </div>
+              <br>
+              <img src="ImageForMovieWebsite/congratulazion.gif" class="img-fluid mx-auto d-block"
+                alt="What surprized gif" id="cnglgif" />
+              <p class="text-center">We did it</p>
+              <br>
+              <div>
+                <h2 class="fs-2">Nextstep</h2>
+                <br>
+                <p class="text-center">The next step in my case study for the Movie Ticket Website project could be
+                  to discuss the development phase of the project, which involves turning my design concepts into a
+                  fully-functional website.<br />During the development phase, I will write the code for the website,
+                  integrating all of the design elements and functionality you created during the design phase. This
+                  process may involve working with various technologies and platforms, such as HTML, CSS, JavaScript,
+                  and content management systems.</p>
+                <br>
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/nextstep.png" class="img-fluid mx-auto d-block imgFdw" alt="Nextsteps"
+                    onclick="zoom(this)" />
+                  <p class="text-center text-lead">Nextstep</p>
+                </div>
+                <br>
+              </div>
+              <div>
+                <h2 class="fs-2">Takeaway</h2>
+                <br>
+                <p class="text-center" id="tatxt">There are several key takeaways from the Movie Ticket Website
+                  project that you can highlight in your case study. These takeaways may include:</p>
+                <br>
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">User-centered Design:</div>
+                      The Movie Ticket Website project demonstrated the importance of putting the user at the center
+                      of the design process. By conducting user research and usability testing, you were able to
+                      create a website that met the needs and preferences of the target audience.
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Accessibility:</div>
+                      The project also highlighted the importance of accessibility in website design. By taking into
+                      account the needs of users with disabilities, you were able to create a website that was more
+                      inclusive and accessible to a wider range of users.
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Collaborative Design Process: </div>
+                      The Movie Ticket Website project involved collaboration with other stakeholders, including
+                      developers, project managers, and clients. The project demonstrated the importance of effective
+                      communication and collaboration in achieving project goals.
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Design Thinking:</div>
+                      The design process for the Movie Ticket Website project followed a design thinking approach,
+                      which emphasized empathy for the user, iterative design, and rapid prototyping. This approach
+                      enabled you to quickly create and test multiple design concepts, and refine the design based on
+                      user feedback.
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Technical Skills:</div>
+                      The project required technical skills in areas such as web design, user experience design, and
+                      front-end development. By successfully completing the project, you were able to demonstrate your
+                      technical skills and expertise in these areas.
+                    </div>
+                  </li>
+                </ol>
+                <br>
+                <div class="image-container">
+                  <img src="ImageForMovieWebsite/takeaways.png" class="img-fluid mx-auto d-block imgFdw"
+                    alt="Take Aways" onclick="zoom(this)" />
+                  <p class="text-center text-lead">Take Aways</p>
+                </div>
+              </div>
+            </div>
+            <br>
+            <img src="ImageForMovieWebsite/Thankgif.gif" class="img-fluid mx-auto d-block" alt="What surprized gif"
+              id="thankgif" />
+            <p class="text-center">Thank You so much for giving your time and love</p>
+            <br>
+            <p class="text-center"><a href="#top" class="link link-active" id="up">Click Here</a> to Go to Top of
+              Website</p>
+            <br>
+            <!-- Accessiblity, Nextstep, Takeaway code over-->
+            <!-- Let's Connect code -->
+            <div class="container">
+              <h2 class="fs1 text-center">Let's Connect With Me...</h2>
+              <br />
+              <br />
+              <div class="row justify-content-center" align="center">
+                <div class="col">
+                  <a class="link-active" href="https://www.linkedin.com/in/shivshankar-mishra-4b117a251"
+                    target="_blank"><i class="bi bi-linkedin" id="linkedin"></i></a>
+                  <a class="link-active" href="https://instagram.com/__shiv_mishra?igshid=Yzg5MTU1MDY="
+                    target="_blank"><i class="bi bi-instagram" id="instagram"></i></a>
+                  <a class="link-active" href="mailto:shivmishankar@gmail.com" target="_blank"><i
+                      class="bi bi-envelope-at" id="linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <br><br>
+            <!-- Let's Connect code over -->
+            <!-- Footer Code -->
+            <footer>
+              <div class="container">
+                <p class="text-center text-lead"><i class="bi bi-c-circle"></i> Shivshankar Mishra Portfolio Project
+                  2023</p>
+              </div>
+            </footer>
+            <!-- Footer Code over -->
+
+            <!-- Javascript code -->
+            <script>
+              function change(element) {
+                element.classList.toggle("fullsize");
+              }
+              function zoom(frame) {
+                frame.classList.toggle("zoomed");
+              }
+            </script>
+            <!-- Javascript code over -->
+</body>
+
+</html>
