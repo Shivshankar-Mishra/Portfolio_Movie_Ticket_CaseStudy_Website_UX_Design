@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Noto+Sans+Zanabazar+Square&family=Playfair+Display:wght@600&family=Raleway:ital,wght@1,500&display=swap");
+
+* {
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+/* .col-sm-12{
+  max-width: 480px;
+} */
+#navimg {
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+}
+
+#websummary,
+#desol,
+#usrsrch,
+#usrper,
+#sitemap,
+#pwtext,
+#dwtext,
+#mkuptxt,
+#actxt,
+#tatxt {
+  font-family: "Raleway", sans-serif;
+}
+
+#AYRgif {
+  width: 75%;
+  border-radius: 10%;
+}
+
+.imgFslide {
+  width: 90%;
+  height: 90%;
+  border: 2px dashed black;
+  cursor: zoom-in;
+}
+
+.fullsize {
+  cursor: zoom-out;
+  width: fit-content;
+  height: fit-content;
+  border-left: 5px solid red;
+  border-right: 5px solid green;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  left: 10%;
+  top: 10%;
+}
+
+.image-container {
+  position: relative;
+}
+
+#OKgif {
+  border-bottom: 2px solid;
+  border-radius: 20%;
+}
+
+#resrch {
+  width: 50px;
+  height: 40px;
+  border-radius: 10%;
+}
+
+#letfinishgif {
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+  width: 80%;
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.sitemap {
+  border-right: 2px solid gray;
+  border-left: 2px solid gray;
+  border-radius: 10%;
+}
+
+#pwtodw {
+  width: 50%;
+  margin-top: -200px;
+  font-size: large;
+}
+
+#OkAlright {
+  width: 70%;
+  height: 400px;
+  margin-top: 30px;
+  border-bottom-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+#dwframe {
+  margin-top: 5%;
+}
+
+.imgFdw {
+  width: 90%;
+  height: 90%;
+  border: 3px solid;
+  border-image: linear-gradient(to right, red, purple);
+  border-image-slice: 1;
+  cursor: zoom-in;
+}
+
+.zoomed {
+  border: 3px solid;
+  border-image: linear-gradient(to right, purple, red);
+  border-image-slice: 1;
+  cursor: zoom-out;
+  width: fit-content;
+  height: fit-content;
+}
+
+.imgFlfp {
+  border: 3px solid;
+  border-image: linear-gradient(to left, orange, brown);
+  border-image-slice: 1;
+}
+
+#lofi:link,
+#hifi:link {
+  text-decoration: none;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#lofi:hover,
+#hifi:hover {
+  text-decoration: none;
+  font-size: larger;
+  color: linear-gradient(to right, red, purple);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#lofi:visited,
+#hifi:visited {
+  text-decoration: none;
+  font-size: large;
+  color: linear-gradient(to right, purple, red);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#lofi:active,
+#hifi:active {
+  text-decoration: none;
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625 or 56.25%) */
+}
+
+.iframe-container iframe {
+  position: absolute;
+  border: 3px solid;
+  background-image: linear-gradient(to right, black, white);
+  border-image: linear-gradient(to right, purple, red);
+  border-image-slice: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .iframe-container {
+    padding-top: 75%;
+    /* 4:3 Aspect Ratio (divide 3 by 4 = 0.75 or 75%) */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .iframe-container {
+    padding-top: 100%;
+    /* 1:1 Aspect Ratio (divide 1 by 1 = 1 or 100%) */
+  }
+}
+
+#linkedin {
+  padding: 3%;
+  font-size: 35px;
+  color: #222;
+  background-color: azure;
+  transition: fill 170ms ease-in-out;
+}
+
+#linkedin:hover {
+  color: azure;
+  background-color: #222;
+  border-radius: 30%;
+  transition: fill 170ms ease-in-out;
+}
+
+#instagram {
+  padding: 3%;
+  font-size: 35px;
+  color: rgb(234, 54, 186);
+  background-color: azure;
+  transition: fill 170ms ease-in-out;
+}
+
+#instagram:hover {
+  color: azure;
+  background-color: rgb(234, 54, 186);
+  border-radius: 30%;
+  transition: fill 170ms ease-in-out;
+}
+
+footer {
+  background-color: lightgray;
+  height: 5vh;
+  margin-bottom: 0px;
+}
+
+#intrtng {
+  width: 80%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-bottom: 2px solid black;
+}
+
+#wtwhat {
+  width: 80%;
+  border-radius: 10%;
+  border-bottom: 4px solid gray;
+  margin-bottom: 5%;
+}
+
+#awesome {
+  width: 80%;
+  border-radius: 10%;
+  border-bottom: 5px solid gray;
+}
+
+#nowrdgif {
+  width: 80%;
+}
+
+#opgif {
+  width: 50%;
+  border-radius: 10%;
+}
+
+#cnglgif {
+  width: 90%;
+}
+
+#thankgif {
+  width: 100%;
+}
+
+#up {
+  text-decoration: none;
+  color: green;
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#up:hover {
+  text-decoration: none;
+  color: red;
+  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#abtbtn {
+  background-image: linear-gradient(to right, red, purple);
+  border-image-slice: 1;
+}
+
+#abtbtn:hover {
+  background-image: linear-gradient(to right, red, purple);
+  opacity: 0.8;
+}
+
+#hmbtn:hover,
+#wkbtn:hover {
+  border-image: linear-gradient(to right, red, purple);
+  border-image-slice: 1;
+}
+
+/* #abtimg {
+    border: 3px solid;
+    border-image: linear-gradient(to top, #ff4500, #800080);
+    border-image-slice: 1;
+} */
+#h1txt {
+  font-family: "Playfair Display", serif;
+  background: -webkit-linear-gradient(#ff4500, #800080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hellotxt {
+  font-family: "Noto Sans Zanabazar Square", sans-serif;
+  background: -webkit-linear-gradient(black, brown);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#destxt {
+  font-size: larger;
+}
+
+.lofi:link {
+  text-decoration: none;
+  font-size: 110%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.lofi:hover {
+  text-decoration: none;
+  font-size: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.circle-image {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background: linear-gradient(180deg, red, purple) border-box;
+  -webkit-mask: 4 linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  overflow: hidden;
+}
+
+.circle-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.connectid {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: auto;
+}
